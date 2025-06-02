@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Registration Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background-color: #f4f4f4;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    form {
+      background: #fff;
+      padding: 25px 40px;
+      border-radius: 8px;
+      max-width: 900px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    fieldset {
+      border: 2px solid #ccc;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    legend {
+      font-weight: bold;
+      padding: 0 10px;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="date"],
+    select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 4px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .inline {
+      display: flex;
+      gap: 15px;
+    }
+
+    .inline label {
+      flex: 1;
+    }
+
+    .radio-group {
+      display: flex;
+      gap: 15px;
+      margin-top: 5px;
+    }
+
+    input[type="submit"] {
+      margin-top: 20px;
+      padding: 10px 25px;
+      background-color: #2c89e8;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #1a6fd0;
+    }
+
+    #left-1
+    {
+      float: left;
+      width: 440px;
+      height: 100px;
+      border: 0;
+    }
+
+    #left-2
+    {
+        float: left;
+        width: fit-content;
+        height: auto;
+    }
+
+    #right-2
+    {
+        vertical-align: center;
+        text-align: left;
+        margin-top: 1px;
+        float: right;
+        width: auto;
+        height: auto;
+    }
+
+    .immunization
+    {
+      height: 50px;
+      width: 300px;
+      float: right;
+      margin-top: 20px;
+    }
+
+    #flex
+    {
+      display: flex;
+    }
+  </style>
+</head>
+<body>
+  <h2>Student Registration Form</h2>
+  <form action="form.php" method="POST">
+
+    <!-- School Use -->
+    <fieldset>
+      <legend>For School Use</legend>
+      <label>Student Number: <input type="text" name="student_number" required></label>
+      <div class="inline">
+        <label>Entry Date: <input type="date" name="entry_date" required></label>
+        <label>Entry Type: <input type="text" name="entry_type"></label>
+        <label>Grade: <input type="text" name="grade"></label>
+      </div>
+      <label>OEN: <input type="text" name="oen"></label>
+      <label>Class/Homeform: <input type="text" name="class_homeform"></label>
+
+      <label>Is the student currently expelled from any school or school board?</label>
+      <div class="radio-group">
+        <label><input type="radio" name="expelled" value="Yes"> Yes</label>
+        <label><input type="radio" name="expelled" value="No" checked> No</label>
+      </div>
+    </fieldset>
+
+    <!-- Student Information -->
+    <fieldset>
+      <legend>Student Information</legend>
+      <div class="inline">
+        <label>Last Name: <input type="text" name="last_name" required></label>
+        <label>First Name: <input type="text" name="first_name" required></label>
+        <label>Middle Name: <input type="text" name="middle_name"></label>
+      </div>
+      <label>Preferred Name (if different): <input type="text" name="preferred_name"></label>
+      <label>Gender:</label>
+      <div class="radio-group">
+        <label><input type="radio" name="gender" value="Male"> Male</label>
+        <label><input type="radio" name="gender" value="Female"> Female</label>
+      </div>
+      <label>Date of Birth: <input type="date" name="dob" required></label>
+      <label>Siblings (if any): <input type="text" name="siblings"></label>
+      <label>Proof of Birth:</label>
+      <div class="checkbox-group">
+        <label><input type="checkbox" name="proof[]" value="OSR"> Copy in OSR</label>
+        <label><input type="checkbox" name="proof[]" value="BirthRecord"> Birth Record</label>
+        <label><input type="checkbox" name="proof[]" value="BirthCert"> Birth Certificate</label>
+        <label><input type="checkbox" name="proof[]" value="Immigration"> Immigration Papers/Card</label>
+        <label><input type="checkbox" name="proof[]" value="Passport"> Passport</label>
+      </div>
+    </fieldset>
+
+    <!-- Previous School Info -->
+    <fieldset>
+      <legend>Previous School Information</legend>
+      <label>Name of Previous School Board / Municipality: <input type="text" name="prev_board"></label>
+      <label>Name of Previous School: <input type="text" name="prev_school"></label>
+      <div class="inline">
+        <label>Last Date Attended: <input type="date" name="last_attended"></label>
+        <label>Grade at Previous School: <input type="text" name="prev_grade"></label>
+      </div>
+      <label>Language of Instruction:</label>
+      <div class="radio-group">
+        <label><input type="radio" name="language" value="English"> English</label>
+        <label><input type="radio" name="language" value="French"> French</label>
+        <label><input type="radio" name="language" value="Other"> Other</label>
+      </div>
+      <label>Reason for Transfer: <input type="text" name="transfer_reason"></label>
+      <label>Attended WRDSB before?</label>
+      <div class="radio-group">
+        <label><input type="radio" name="attended_wrdsb" value="Yes"> Yes</label>
+        <label><input type="radio" name="attended_wrdsb" value="No"> No</label>
+      </div>
+      <label>If Yes, name school(s): <input type="text" name="previous_wrdsb_school"></label>
+    </fieldset>
+
+    <!-- Health -->
+    <fieldset>
+      <legend>Health Information</legend>
+      <fieldset id="left-1">
+        <label>Medical Conditions: <input type="text" name="medical_conditions"></label>
+        <label>Does the student require an epi-pen?</label>
+        <div class="radio-group">
+          <label><input type="radio" name="epipen" value="Yes"> Yes</label>
+          <label><input type="radio" name="epipen" value="No"> No</label>
+        </div>
+      </fieldset>
+      <fieldset class="immunization">
+        <label>Provided Immunization Records?</label>
+        <div class="radio-group">
+          <label><input type="checkbox" name="status[]" value="Yes">Yes</label>
+          <label><input type="checkbox" name="status[]" value="No">No</label>
+        </div>
+      </fieldset>
+    </fieldset>
+
+    <!-- Citizenship -->
+    <fieldset id="flex">
+      <fieldset id="left-2" style="align-content: center">
+        <legend>Citizenship Information</legend>
+        <div class="inline">
+          <label>Birth Country: <input type="text" name="birth_country"></label>
+          <label>If Canada, Province: <input type="text" name="province"></label>
+        </div>
+        <label>Country of Citizenship: <input type="text" name="citizenship"></label>
+        <label>Entered Canada (if not born here):</label>
+        <div class="inline">
+          <label>Year: <input type="text" name="entry_year"></label>
+          <label>Month: <input type="text" name="entry_month"></label>
+          <label>Day: <input type="text" name="entry_day"></label>
+        </div>
+      </fieldset>
+      <fieldset id="right-2">
+        <legend>Status in Canada</legend>
+          <label><input type="checkbox" name="status[]" value="Citizen"> Canadian Citizen</label>
+          <label><input type="checkbox" name="status[]" value="PR"> Permanent Resident</label>
+          <label><input type="checkbox" name="status[]" value="StudyPermit"> Study Permit</label>
+          <label><input type="checkbox" name="status[]" value="Native"> Native Ancestry</label>
+          <label><input type="checkbox" name="status[]" value="Other"> Other</label>
+      </fieldset>
+    </fieldset>
+    <input type="submit" value="Register">
+  </form>
+</body>
+</html>
