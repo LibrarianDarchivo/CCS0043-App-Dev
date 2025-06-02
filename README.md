@@ -2,6 +2,6 @@
 
 Applications Development Repo ni Jan
 
-## 📁 | Stuff
+## 📁 Stuff
 - Student Registration Page
 - Student Grade Calculator
