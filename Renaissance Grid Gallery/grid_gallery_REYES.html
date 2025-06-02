@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Renaissance Grid Gallery</title>
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f6f0;
+      color: #333;
+    }
+
+    header {
+      background-color: #5e4630;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      font-family: "Garamond",serif;
+    }
+
+    header p {
+      font-style: italic;
+      margin-top: 5px;
+    }
+
+    .gallery-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 30px 20px;
+    }
+
+    .gallery-grid {
+      column-count: 3;
+      column-gap: 25px;
+    }
+
+    .gallery-item {
+      display: inline-block;
+      width: 100%;
+      margin-bottom: 25px;
+      background-color: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .gallery-item:hover {
+      transform: translateY(-5px);
+    }
+
+    .gallery-item img {
+      width: 100%;
+
+      object-fit: contain;
+    }
+
+    .gallery-info {
+      padding: 15px;
+      text-align: center;
+    }
+
+    .gallery-info h3 {
+      margin: 10px 0 5px;
+      color: #5e4630;
+    }
+
+    .gallery-info p {
+      margin: 0;
+      font-size: 0.9em;
+      color: #777;
+    }
+
+    footer {
+      background-color: #5e4630;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      .gallery-info h3 {
+        font-size: 1.1em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Renaissance Art Grid Gallery</h1>
+    <p>Masterpieces from the Golden Age of Art</p>
+  </header>
+
+  <section class="gallery-container">
+    <div class="gallery-grid">
+      <!-- 1 -->
+      <div class="gallery-item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg/330px-Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg">
+        <div class="gallery-info">
+          <h3>Mona Lisa</h3>
+          <p>Leonardo da Vinci</p>
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="gallery-item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5b/Michelangelo_-_Creation_of_Adam_%28cropped%29.jpg">
+        <div class="gallery-info">
+          <h3>Creation of Adam</h3>
+          <p>Michelangelo</p>
+        </div>
+      </div>
+
+      <!-- 3 -->
+      <div class="gallery-item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg/2560px-Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg">
+        <div class="gallery-info">
+          <h3>Birth of Venus</h3>
+          <p>Sandro Botticelli</p>
+        </div>
+      </div>
+
+      <!-- 4 -->
+      <div class="gallery-item">
+        <img src="https://cdn.britannica.com/65/237365-138-03A2AF7F/did-you-know-The-School-of-Athens-Raphael.jpg?w=800&h=450&c=crop">
+        <div class="gallery-info">
+          <h3>School of Athens</h3>
+          <p>Raphael</p>
+        </div>
+      </div>
+
+      <!-- 5 -->
+      <div class="gallery-item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/The_Last_Supper_-_Leonardo_Da_Vinci_-_High_Resolution_32x16.jpg/1200px-The_Last_Supper_-_Leonardo_Da_Vinci_-_High_Resolution_32x16.jpg">
+        <div class="gallery-info">
+          <h3>The Last Supper</h3>
+          <p>Leonardo da Vinci</p>
+        </div>
+      </div>
+
+      <!-- 6 -->
+      <div class="gallery-item">
+        <img src="https://about.jstor.org/wp-content/uploads/2013/03/scala_archives_1031314668.gif">
+        <div class="gallery-info">
+          <h3>Primavera</h3>
+          <p>Sandro Botticelli</p>
+        </div>
+      </div>
+
+      <!-- 7 -->
+      <div class="gallery-item">
+        <img src="https://cdn.britannica.com/05/242205-050-9A5FD3B4/The-Virgin-of-the-Rocks-Leonardo-da-Vinci-circa-1491-1508.jpg" alt="Virgin On The Rocks">
+        <div class="gallery-info">
+          <h3>Virgin On The Rocks</h3>
+          <p>Leonardo da Vinci</p>
+        </div>
+      </div>
+
+      <!-- 8 -->
+      <div class="gallery-item">
+        <img src="https://www.artyfactory.com/art_appreciation/art_movements/italian-renaissance/italian-renaissance/simone-martini-annunciation.jpg">
+        <div class="gallery-info">
+          <h3>The Annunciation, 1333</h3>
+          <p>Simone Martini</p>
+        </div>
+      </div>
+
+      <!-- 9 -->
+      <div class="gallery-item">
+        <img src="https://www.artyfactory.com/art_appreciation/art_movements/italian-renaissance/italian-renaissance/giotto-betrayal.jpg">
+        <div class="gallery-info">
+          <h3>'The Betrayal of Christ', 1303-06</h3>
+          <p>Giotto</p>
+        </div>
+      </div>
+
+      <!-- 10 -->
+      <div class="gallery-item">
+        <img src="https://www.theartist.me/wp-content/uploads/2017/08/The-Entombment-of-Christ-by-Caravaggio.jpg">
+        <div class="gallery-info">
+          <h3>The Entombment of Christ</h3>
+          <p>Caravaggio</p>
+        </div>
+      </div>
+
+      <!-- 11 -->
+      <div class="gallery-item">
+        <img src="https://www.artyfactory.com/art_appreciation/art_movements/italian-renaissance/italian-renaissance/uccello-battle-san-romano.jpg">
+        <div class="gallery-info">
+          <h3>'Battle of San Romano', c.1438-40</h3>
+          <p>Paolo Uccello</p>
+        </div>
+      </div>
+
+      <!-- 12 -->
+      <div class="gallery-item">
+        <img src="https://www.artyfactory.com/art_appreciation/art_movements/italian-renaissance/italian-renaissance/michelangelo-last-judgement.jpg">
+        <div class="gallery-info">
+          <h3>'The Last Judgement', 1535-41</h3>
+          <p>Michelangelo Buonarroti</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 | JAN ANDREI REYES - TN22</p>
+  </footer>
+
+</body>
+</html>
