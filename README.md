@@ -17,4 +17,4 @@ Applications Development Repo ni Jan
 
 ## ඞ Amogus
 - [FA5 (Deprecated) (Sussy)](https://github.com/LibrarianDarchivo/CCS0043-App-Dev/tree/main/FA5-Nah)
-- [Shrek](https://github.com/LibrarianDarchivo/CCS0043-App-Dev/tree/main/shrek)
+- [Shrek](https://github.com/LibrarianDarchivo/CCS0043-App-Dev/tree/main/shrek.jpg)
