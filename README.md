@@ -8,6 +8,8 @@ Applications Development Repo ni Jan
 **1. Go to `xampp/mysql/data/` and locate `my.ini`**
 
 **2. Open `my.ini` with any text editor and change port=3306 -> 3307**
+
+
 ![image](https://github.com/user-attachments/assets/ec3993fb-fbfa-452a-b1b0-5a15e90c028a)
 
 **3. Save and restart XAMPP**
