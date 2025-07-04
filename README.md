@@ -24,7 +24,7 @@ Applications Development Repo ni Jan
 
 **2. Delete 📄 `ibdata1`, 📄 `ib_logfile0`, and 📄 `ib_logfile1`**
 
-**3. Copy __everything__ from `xampp/mysql/backup/` into `xampp/data/`**
+**3. Copy __everything__ from `xampp/mysql/backup/` into `xampp/mysql/data/`**
 > Overwrite if prompted
 
 
