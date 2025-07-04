@@ -16,4 +16,4 @@ Applications Development Repo ni Jan
 - localhost/phpmyadmin
 
 ## ඞ Amogus
-- [FA5-Nah](https://github.com/LibrarianDarchivo/CCS0043-App-Dev/tree/main/FA5-Nah)
+- [FA5 (Deprecated) (Sussy)](https://github.com/LibrarianDarchivo/CCS0043-App-Dev/tree/main/FA5-Nah)
