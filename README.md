@@ -30,6 +30,7 @@ Applications Development Repo ni Jan
 **3. Copy __everything__ from `xampp/mysql/backup/` into `xampp/mysql/data/`**
 > Overwrite if prompted
 
+**4. Restart XAMPP**
 
 ## 📁 FA
 - [PSA4 Technical / Formative Assessment 4](https://github.com/LibrarianDarchivo/CCS0043-App-Dev/tree/main/FA4)
